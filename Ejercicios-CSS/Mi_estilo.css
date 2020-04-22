@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    font-family: 'Gugi', cursive;
+    background: linear-gradient(to right, rgba(62, 158, 167, 0.99), #d3e5f5);
+}
+div{
+    border: 2px solid #1f1bff;
+    margin: 10px;
+    padding: 5px 30px;
+    border-radius: 15px;
+    box-shadow: 10px 12px #1f1bff;
+
+}
+#principal{
+    width: 50px;
+    float: left;
+    border-radius: 100%;
+}
+div.especial h3{
+    font-family: 'Noto Serif', serif;
+    text-shadow: 10px 5px #a3a2a2;
+}
