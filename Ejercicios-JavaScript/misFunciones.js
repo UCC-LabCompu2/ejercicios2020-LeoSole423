@@ -101,3 +101,22 @@ function calcular_div() {
     n2=document.getElementsByName("div_num2")[0].value;
     document.getElementsByName("div_total")[0].innerHTML= n1 / Number(n2);
 }
+
+function cargarweb() {
+    var cant, unidad, urlcomp;
+    cant= document.getElementById("distancia").value;
+    unidad = document.getElementsByName("unidades")[0].value;
+    urlcomp = "segundaWeb.html#" + cant + "#" + unidad;
+    window.open(urlcomp);
+
+}
+
+function cargarresultado() {
+    var urlcomp, cant, unid;
+
+    urlcomp = window.location.href.split("/")[5];
+    cant = window.location.href.split("#")[1];
+    unid = window.location.href.split("#")[2];
+
+    document.getElementById("dist").value = cant + " " + unid;
+}
