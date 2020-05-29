@@ -215,3 +215,23 @@ function dibImagen(posx,posy) {
     }
 
 }
+
+x=0;
+dx=1;
+function animarAuto() {
+    var canvas = document.getElementById("myCanvas");
+    var ctx  = canvas.getContext("2d");
+
+    var img = new Image();
+    img.src = "images/auto.png";
+
+    img.onload = function(){
+        ctx.drawImage(img,x,100);
+    }
+
+    canvas.width = canvas.width;
+
+    x+=dx;
+    if(x>1000) x=0;
+
+}
